@@ -2,9 +2,9 @@ var player;
 
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('video-placeholder', {
-		width: 600,
-		height: 400,
-		videoId: 'vrP-_T-h9YM',
+		width: 900,
+		height: 600,
+		videoId: 'Pn7M9PpQEgo',
 		playerVars: {
 			color: 'white'
 			//autoplay: '1'
