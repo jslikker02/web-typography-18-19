@@ -31,15 +31,15 @@ captions[21] = ['62.1','65.19'];
 captions[22] = ['65.58','69.02'];
 captions[23] = ['69.06','71.79'];
 // All right. Mr. Grogan.
-captions[24] = ['71.85','75.42'];
-captions[25] = ['76.9','78.15'];
-captions[26] = ['78.15','81.93'];
+captions[24] = ['71.85','75.0'];
+captions[25] = ['75.35','75.99'];
+captions[26] = ['76.0','79.90'];
 // obey his leader. Marley.
-captions[27] = ['81.93','85.34'];
-captions[28] = ['85.65','91.17'];
-captions[29] = ['91.71','93.59'];
+captions[27] = ['79.90','85.30'];
+captions[28] = ['85.65','90.17'];
+captions[29] = ['90.71','93.59'];
 // MARLEEY
-captions[30] = ['93.59','118.74'];
+captions[30] = ['93.59','94.74'];
 captions[31] = ['118.74','118.74'];
 captions[32] = ['118.74','118.74'];
 // Sorry usually does this with

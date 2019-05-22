@@ -190,28 +190,48 @@ h6{
     animation-delay: 0.6s;
 }
 .sound10 iframe{
-    transition: .5s;
-    animation: shake 1s;
+animation: 
 }
 .sound11 iframe{
+transition: 1s;
+    box-shadow: 0em 0em 14em red;
+}
+.sound12 iframe{
+    transition: 1s;
+    animation: shake 1s;
+     box-shadow: 0em 0em 14em red;
+}
+.sound13 iframe{
+transition: .5s;
+    box-shadow: 0em 0em 14em white;}
+
+.sound14 iframe{
+transition: .5s;
+    box-shadow: 0em 0em 14em yellow;}
+
+.sound15 iframe{
+transition: .5s;
+    box-shadow: 0em 0em 14em red;}
+
+.sound16 iframe{
     transition: .5s;
     filter: blur(5px);
     box-shadow: 0em 0em 14em #F900F9;
 }
-.sound12 iframe{
+.sound17 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em red;
     filter: blur(0px);
 }
-.sound13 iframe{
+.sound18 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em blue;
 }
-.sound14 iframe{
+.sound19 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em red;
 }
-.sound15 iframe{
+.sound20 iframe{
     transition: 1s;
     box-shadow: 0em 0em 14em yellow;
 }
@@ -941,9 +961,215 @@ font-size: 60px;}
 	opacity: 1;
     transition: 0s 2.2s;}
 
+.p22 span {
+	opacity: 0;
+	
+}
+.p22.on span:first-of-type {
+	opacity: 1;
+	transition: .0s;
+	
+}
+.p22.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
 
+}
+.p22.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .4s;
 
+}
+.p22.on span:nth-of-type(4) {
+	opacity: 1;
+    transition: 0s .9s;}
 
+.p22.on span:nth-of-type(5) {
+	opacity: 1;
+    transition: 0s 1.2s;}
+
+.p22.on span:nth-of-type(6) {
+	opacity: 1;
+    transition: 0s 1.4s;
+    font-size: 90px;}
+    
+
+.p22.on span:nth-of-type(7) {
+	opacity: 1;
+    transition: 0s 1.7s;}
+
+.p23 span {
+	opacity: 0;
+	
+}
+.p23.on span:first-of-type {
+	opacity: 1;
+	transition: .0s;
+	
+}
+.p23.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+
+}
+.p23.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p23.on span:nth-of-type(4) {
+	opacity: 1;
+    transition: 0s .7s;}
+
+.p23.on span:nth-of-type(5) {
+	opacity: 1;
+    transition: 0s 1s;}
+
+.p23.on span:nth-of-type(6) {
+	opacity: 1;
+    transition: 0s 1.2s;
+font-family: "Brenner";
+font-style: Italic;
+font-weight: 200;}
+    
+
+.p23.on span:nth-of-type(7) {
+	opacity: 1;
+    transition: 0s 1.4s;}
+
+.p24 span {
+	opacity: 0;
+	
+}
+.p24.on span:first-of-type {
+	opacity: 1;
+	transition: .0s;
+	
+}
+.p24.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s 2.5s;
+}
+.p24.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 2.8s;
+}
+.p26 span {
+	opacity: 0;
+	
+}
+.p26.on span:first-of-type {
+	opacity: 1;
+	transition: 1s;
+	
+}
+.p26.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .9s;
+}
+.p26.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 1.9s;
+}
+.p26.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s 2.2s;
+    font-size: 70px;
+}
+.p26.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s 2.4s;
+    font-size: 70px;
+}
+.p26.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s 2.6s;
+    font-size: 90px;
+}
+.p26.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 0s 3s;
+    font-size: 70px;
+}
+
+.p27 span {
+	opacity: 0;
+	
+}
+.p27.on span:first-of-type {
+	opacity: 1;
+	transition: 1s;
+	
+}
+.p27.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .9s;
+}
+.p27.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 1.9s;
+}
+.p27.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s 2.2s;
+    
+}
+.p27.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s 2.4s;
+    
+}
+.p27.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s 3.5s;
+    
+}
+.p28 span {
+	opacity: 0;
+	
+}
+.p28.on span:first-of-type {
+	opacity: 1;
+	transition: .0s;
+	
+}
+.p28.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s 4s;
+
+}
+
+.p29 span {
+	opacity: 0;
+	
+}
+.p29.on span:first-of-type {
+	opacity: 1;
+	transition: .0s;
+    font-size: 60px;
+	
+}
+.p29.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s 1.4s;
+    font-size: 80px;
+}
+.p29.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 2.4s;
+    font-size: 100px;
+}
+
+.p30 span {
+	opacity: 0;
+	
+}
+.p30.on span:first-of-type {
+	opacity: 1;
+	transition: 0s .9s;
+    font-size: 105px;
+    
+} 
 
 
 p{
