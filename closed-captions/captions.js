@@ -19,12 +19,12 @@ captions[12] = ['31.08','32.96'];
 captions[13] = ['38.96','42.85'];
 captions[14] = ['43.06','45.06'];
 // Let's. Go. Very
-captions[15] = ['45.37','48.4'];
-captions[16] = ['48.4','51.2'];
+captions[15] = ['45.37','46.4'];
+captions[16] = ['47.4','51.2'];
 captions[17] = ['52.85','53.59'];
 // BARK BARK BARK
-captions[18] = ['53.59','55.93'];
-captions[19] = ['55.93','59.37'];
+captions[18] = ['53.59','54.93'];
+captions[19] = ['55.10','59.37'];
 captions[20] = ['59.37','61.86'];
 // Let's line up again. Class
 captions[21] = ['62.1','65.19'];

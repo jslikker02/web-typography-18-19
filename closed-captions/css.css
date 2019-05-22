@@ -86,16 +86,39 @@ font-weight: 400;
     box-shadow: 0em 0em 14em yellow;
 }
 .sound5 h1{
-    transition: .2s;
-    opacity: 1;
+    animation: verschijn;
+    animation-duration: 5s;
+    display: block;
 }
 .sound5 h2{
-    transition: 1.5s;
-    opacity: 1;
+   animation: verschijn;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    display: block;
 }
 .sound5 h3{
-    transition: 2s;
-    opacity: 1;
+     animation: verschijn;
+    animation-duration: 3s;
+    animation-delay: 1.2s;
+    display: block;
+}
+.sound5 h4{
+     animation: verschijn;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    display: block;
+}
+.sound5 h5{
+     animation: verschijn;
+    animation-duration: 1.8s;
+    animation-delay: 1.9s;
+    display: block;
+}
+.sound5 h6{
+     animation: verschijn;
+    animation-duration: 1.5s;
+    animation-delay: 3.1s;
+    display: block;
 }
 h1{
     opacity: 0;
@@ -108,16 +131,57 @@ h1{
 }
 h2{
     font-size: 200px;
-    transform: rotate(90deg);
-    margin-top: 20%;
-    margin-left: 70%;
+    transform: rotate(50deg);
     color: greenyellow;
-    z-index: 1;
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
 }
 h3{
-   opacity: 0;
-     color: white;
-    z-index: 1;
+    font-size: 200px;
+    transform: rotate(-10deg);
+    color: deepskyblue;
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    margin-top: 20%;
+    margin-left: 50%;
+    display: none;
+} 
+
+h4{
+    font-size: 170px;
+    transform: rotate(10deg);
+    color: orangered;
+    z-index: 3;
+    position: absolute;
+    opacity: 0;
+    margin-top: 10%;
+    margin-left: 30%;
+    display: none;
+}
+
+h5{
+    font-size: 150px;
+    transform: rotate(10deg);
+    color:fuchsia;
+    z-index: 3;
+    position: absolute;
+    opacity: 0;
+    margin-top: 10%;
+    margin-left: 60%;
+    display: none;
+}
+h6{
+    font-size: 120px;
+    transform: rotate(-15deg);
+    color:azure;
+    z-index: 3;
+    position: absolute;
+    opacity: 0;
+    margin-top: 30%;
+    margin-left: 20%;
+    display: none;
 }
 .sound9 iframe{
     transition: .5s;
@@ -153,7 +217,6 @@ h3{
 }
 
 
-
 #closed-captions p{
     opacity: 0;
     transition: .05s;
@@ -183,6 +246,73 @@ h3{
     transform: translate3d(400px, 0, 0) translate(-50%,-50%);
   }
 }
+@keyframes verschijn{
+    0%{
+        opacity: 0;
+        
+    }
+    5%{
+        opacity: 1;
+        
+    }
+    90%{
+         opacity: 1;
+        
+    }
+    100%{
+         opacity: 0;
+        
+    }
+   
+}
+/*
+@keyframes tril1{
+    0%{
+        box-shadow: 0em 0em 14em red;
+        
+    }
+    10%{
+        box-shadow: 0em 0em 2em red;
+        
+    }
+    20%{
+        box-shadow: 0em 0em 4em red;
+        
+    }
+    30%{
+        box-shadow: 0em 0em 2em red;
+        
+    }
+    40%{
+        box-shadow: 0em 0em 4em red;
+        
+    }
+
+    50%{
+        box-shadow: 0em 0em 2em red;
+        
+    }
+        
+    70%{
+        box-shadow: 0em 0em 4em red;
+        
+    }
+    
+    80%{
+        box-shadow: 0em 0em 2em red;
+        
+    }
+    
+    90%{
+        box-shadow: 0em 0em 4em red;
+        
+    }
+    100%{
+        box-shadow: 0em 0em 6em red;
+        
+    }
+}
+*/
 
 @keyframes tril1{
     0%{
@@ -205,32 +335,32 @@ h3{
         box-shadow: 0em 0em 4em red;
         
     }
-    }
+    
     50%{
-        box-shadow: 0em 0em 2em red;
+         box-shadow: 0em 0em 14em red;
         
     }
         }
     70%{
-        box-shadow: 0em 0em 4em red;
+         box-shadow: 0em 0em 14em red;
         
     }
-    }
+    
     80%{
         box-shadow: 0em 0em 2em red;
         
     }
-    }
+    
     90%{
         box-shadow: 0em 0em 4em red;
         
     }
-    }
+    
     100%{
         box-shadow: 0em 0em 6em red;
         
     }
-}
+
 /* **********************************************
 The first paragraph, with extended timing for 
 	all siblings. Basically what it does is that
@@ -297,8 +427,6 @@ You probably want to change the styling.
 	
 }
 
-
-
 .p2 span {
 	opacity: 0;
 	
@@ -316,13 +444,13 @@ You probably want to change the styling.
 .p2.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s .5s;
-	margin-right: -.25em;
+/*	margin-right: -.25em;*/
 
 }
 .p2.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0s .7s;
-	margin-right: -.25em;
+
 }
 
 .p2.on span:nth-of-type(5) {
@@ -340,6 +468,40 @@ You probably want to change the styling.
 	transition: 0s 1.7s;
 	
 }
+.p2.on span:nth-of-type(8) {
+	opacity: 1;
+	transition: 0s 1.9s;
+	
+}
+.p2.on span:nth-of-type(9) {
+	opacity: 1;
+	transition: 0s 2.1s;
+	
+}
+.p2.on span:nth-of-type(10) {
+	opacity: 1;
+	transition: 0s 2.3s;
+	
+}
+
+.p2.on span:nth-of-type(11) {
+	opacity: 1;
+	transition: 0s 2.5s;
+	
+}
+
+.p2.on span:nth-of-type(12) {
+	opacity: 1;
+	transition: 0s 2.6s;
+	
+}
+
+.p2.on span:nth-of-type(13) {
+	opacity: 1;
+	transition: 0s 2.8s;
+	
+}
+
 
 .p3 span {
 	opacity: 0;
@@ -358,13 +520,11 @@ You probably want to change the styling.
 .p3.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s .5s;
-	margin-right: -.25em;
 
 }
 .p3.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0s .7s;
-	margin-right: -.25em;
 }
 
 .p3.on span:nth-of-type(5) {
@@ -382,41 +542,408 @@ You probably want to change the styling.
 	transition: 0s 1.7s;
 	
 }
+.p3.on span:nth-of-type(8) {
+	opacity: 1;
+	transition: 0s 1.8s;
+}
+.p3.on span:nth-of-type(9) {
+	opacity: 1;
+	transition: 0s 2.7s;
+}
 
+.p3.on span:nth-of-type(10) {
+	opacity: 1;
+	transition: 0s 2.8s;
+}
+.p4 span {
+	opacity: 0;
+	
+}
+.p4.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p4.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p4.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+
+}
+.p4.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .7s;
+}
+.p4.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p4.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s .9s;
+}
+.p4.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 0s 1s;
+}
 .p0.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0s 2s;
 	font-family: "brenner script";
 }
+
+.p5 span {
+	opacity: 0;
+	
+}
+.p5.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p5.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p5.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+
+}
+.p5.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .6s;
+
+}
+.p5.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s .7s;
+
+}
+.p7 span {
+	opacity: 0;
+	
+}
+.p7.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p7.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p7.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 1.3s;
+
+}
+.p7.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s 1.5s;
+
+}
+.p7.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s 1.7s;
+
+}
+.p7.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s 1.8s;
+
+}
+
+.p8 span {
+	opacity: 0;
+	
+}
+.p8.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p8.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p8.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+
+}
+.p8.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .6s;
+
+}
+.p8.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s .7s;
+
+}
+.p8.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p8.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 0s .9s;
+}
+.p8.on span:nth-of-type(8) {
+	opacity: 1;
+	transition: 0s 1s;
+}
+.p12 span {
+	opacity: 0;
+	
+}
+.p12.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p12.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .6s;
+
+}
+.p12.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .7s;
+    }
+.p12.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+
+
+}
+/*6 even overslaan?*/
+
+.p13 span {
+	opacity: 0;
+	
+}
+.p13.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p13.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p13.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .7s;
+
+}
+.p13.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+
+}
+.p13.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s .9s;
+}
+.p13.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s 1.4s;
+}
+.p13.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 0s 1.5s;
+}
+.p13.on span:nth-of-type(8) {
+	opacity: 1;
+	transition: 0s 1.6s;
+}
+.p13.on span:nth-of-type(9) {
+	opacity: 1;
+	transition: 0s 1.7s;
+}
+.p13.on span:nth-of-type(10) {
+	opacity: 1;
+	transition: 0s 1.8s;
+}
+
 .p14 span {
 	opacity: 0;
 	font-family: brenner;
 }
 .p14.on span:first-of-type {
 	opacity: 1;
-	transition: 0s;
-    height: 20%;
+	transition: 0s .5s;
     font-family: "Brenner Sans Condensed";
-font-style: Normal;
 font-weight: 200;
 }
 .p14.on span:nth-of-type(2) {
 	opacity: 1;
-	transition: 0s .4s;
-	margin-right: -.25em;
+	transition: 0s .7s;
 	font-weight: 400;
     font-family: "Brenner Sans Condensed";
-font-style: Italic;
 
 }
 .p14.on span:nth-of-type(3) {
 	opacity: 1;
-	transition: 0s .5s;
-	margin-right: -.25em;
-	font-family: "Brenner Sans Condensed";
-font-style: Italic;
-font-weight: 800;
+	transition: 0s .9s;
+	font-weight: 400;
+    font-family: "Brenner Sans Condensed";
+
 }
+.p15 span {
+	opacity: 0;
+	
+}
+.p15.on span:first-of-type {
+	opacity: 1;
+	transition: 0s .5s;
+    f;
+}
+.p15.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .7s;
+    font-size: 90px;
+   }
+
+.p16 span {
+	opacity: 0;
+	
+}
+.p16.on span:first-of-type {
+	opacity: 1;
+	transition: .3s;
+	
+}
+.p16.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .6s;
+
+}
+.p16.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 2.3s;
+    font-size: 60px;
+
+}
+.p16.on span:nth-of-type(4) {
+	opacity: 1;
+    transition: 0s 2.5s;
+font-size: 60px;}
+
+.p19 span {
+	opacity: 0;
+	
+}
+.p19.on span:first-of-type {
+	opacity: 1;
+	transition: .3s;
+	
+}
+.p19.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .6s;
+
+}
+.p19.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s 2.3s;
+    font-size: 60px;
+
+}
+.p19.on span:nth-of-type(4) {
+	opacity: 1;
+    transition: 0s 2.5s;
+font-size: 60px;}
+
+.p19.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s 2.6s;
+    font-size: 60px;
+
+}
+.p19.on span:nth-of-type(6) {
+	opacity: 1;
+    transition: 0s 2.7s;
+font-size: 60px;}
+
+.p20 span {
+	opacity: 0;
+	
+}
+.p20.on span:first-of-type {
+	opacity: 1;
+	transition: .1;
+	
+}
+.p20.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .6s;
+
+}
+.p20.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .8s;
+
+}
+.p20.on span:nth-of-type(4) {
+	opacity: 1;
+    transition: 0s 1.6s;}
+
+.p21 span {
+	opacity: 0;
+	
+}
+.p21.on span:first-of-type {
+	opacity: 1;
+	transition: .0s;
+	
+}
+.p21.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+
+}
+.p21.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .4s;
+
+}
+.p21.on span:nth-of-type(4) {
+	opacity: 1;
+    transition: 0s .5s;}
+
+.p21.on span:nth-of-type(5) {
+	opacity: 1;
+    transition: 0s 1.5s;}
+
+.p21.on span:nth-of-type(6) {
+	opacity: 1;
+    transition: 0s 1.7s;}
+
+.p21.on span:nth-of-type(7) {
+	opacity: 1;
+    transition: 0s 1.9s;}
+
+.p21.on span:nth-of-type(8) {
+	opacity: 1;
+    transition: 0s 2.1s;}
+.p21.on span:nth-of-type(9) {
+	opacity: 1;
+    transition: 0s 2.2s;}
+
+
+
+
 
 
 p{
