@@ -47,6 +47,7 @@ font-weight: 400;
     transform: translate(-50%,-50%);
     border: 1em;
     z-index: 1;
+    margin-bottom: 10em;
    
 }
 .sound0 iframe{
@@ -60,14 +61,19 @@ font-weight: 400;
 .sound2 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em blue;
+    animation: hangen 2s;
 }
 .sound3 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em red;
+    animation: draaien 1s;
+    animation-delay: 3s;
 }
 .sound4 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em white;
+     animation: woosh 5s;
+    animation-delay: 3s;
 }
 .sound5 iframe{
     transition: .5s;
@@ -84,6 +90,8 @@ font-weight: 400;
 .sound8 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em yellow;
+    animation: hangen .4s;
+    animation-delay: 1.2s;
 }
 .sound5 h1{
     animation: verschijn;
@@ -183,14 +191,32 @@ h6{
     margin-left: 20%;
     display: none;
 }
+h7{
+    font-size: 380px;
+    color:azure;
+    z-index: 3;
+    color: orange;
+    position: absolute;
+    opacity: 0;
+    margin-top: 15%;
+    margin-left: 80%;
+    display: none;
+   font-family: "Brenner Sans Condensed";
+font-style: Italic;
+font-weight: 800;
+}
 .sound9 iframe{
     transition: .5s;
     box-shadow: 0em 0em 14em red;
     animation: tril1 1.3s linear 4 forwards;
     animation-delay: 0.6s;
 }
-.sound10 iframe{
-animation: 
+.sound10 h7{
+      animation: verschijn1;
+    animation-duration: .9s;
+    animation-delay: 1.4s;
+    
+    display: block;
 }
 .sound11 iframe{
 transition: 1s;
@@ -207,11 +233,16 @@ transition: .5s;
 
 .sound14 iframe{
 transition: .5s;
-    box-shadow: 0em 0em 14em yellow;}
+    box-shadow: 0em 0em 14em yellow;
+animation: opkomen;
+animation-duration: 4.5s;
+transition: 0.5s}
 
 .sound15 iframe{
 transition: .5s;
-    box-shadow: 0em 0em 14em red;}
+    box-shadow: 0em 0em 14em red;
+animation: shake 1s;
+animation-delay: 1s}
 
 .sound16 iframe{
     transition: .5s;
@@ -266,6 +297,8 @@ transition: .5s;
     transform: translate3d(400px, 0, 0) translate(-50%,-50%);
   }
 }
+
+
 @keyframes verschijn{
     0%{
         opacity: 0;
@@ -285,6 +318,133 @@ transition: .5s;
     }
    
 }
+
+@keyframes verschijn1{
+    0%{
+        opacity: 0;
+        margin-left: 80%;
+    }
+    5%{
+        opacity: 1;
+        margin-left: 70%;
+    }
+    90%{
+         opacity: 1;
+        margin-left: -25%;
+        
+    }
+    100%{
+         opacity: 0;
+        margin-left: -40%;
+        
+    }
+   
+}
+@keyframes draaien{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg) ;
+    }
+
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+        
+    }
+   
+}
+/*
+@keyframes downsize{
+   0% {
+       transform: translate(-50%,-50%) scale(1.0);
+    }
+
+    80% {
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+   
+}
+*/
+
+@keyframes opkomen{
+0% {
+       transform: translate(-50%,-50%) scale(1);
+    }
+
+    90% {
+        transform: translate(-50%,-50%) scale(1.4);
+    }
+     100% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+@keyframes hangen{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+
+    90%{
+        transform: translate(-50%,-50%) rotate(-10deg);
+        
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+   
+}
+
+@keyframes woosh{
+0% {
+       transform: translate(-50%,-50%);
+     box-shadow: 0em 0em 14em white;
+    }
+
+    20% {
+        transform: translate(-70%,-50%);
+         box-shadow: 0em 0em 2em white;
+    }
+     40% {
+        transform: translate(-30%,-50%);
+          box-shadow: 0em 0em 14em white;
+    }
+      60% {
+        transform: translate(-70%,-50%);
+           box-shadow: 0em 0em 2em white;
+    }
+     80% {
+        transform: translate(-30%,-50%);
+          box-shadow: 0em 0em 14em white;
+    }
+    100% {
+        transform: translate(-50%,-50%);
+    }
+    
+   
+}
+/*
+@keyframes opkomen{
+    0% {
+       transform: translate(-50%,-50%) scale(1.0);
+    }
+    20% {
+       transform: translate(-50%,-50%) scale(1.3);
+    }
+    40% {
+        transform: translate(-50%,-50%) scale(1.6);
+    }
+    60% {
+       transform: translate(-50%,-50%) scale(1.9;
+    }
+    80% {
+       transform: translate(-50%,-50%) scale(2.1);
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(2.4);
+    }
+}
+*/
 /*
 @keyframes tril1{
     0%{
@@ -338,22 +498,23 @@ transition: .5s;
     0%{
         box-shadow: 0em 0em 14em red;
         
+        
     }
     10%{
         box-shadow: 0em 0em 2em red;
-        
+         transform: translate(-50%,-50%) scale(1);
     }
     20%{
         box-shadow: 0em 0em 4em red;
-        
+         transform: translate(-50%,-50%) scale(0.9);
     }
     30%{
         box-shadow: 0em 0em 2em red;
-        
+         transform: translate(-50%,-50%) scale(1);
     }
     40%{
         box-shadow: 0em 0em 4em red;
-        
+     transform: translate(-50%,-50%) scale(0.9);
     }
     
     50%{
@@ -396,12 +557,11 @@ You probably want to change the styling.
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
-	font-weight: 200;
+
 }
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s .4s;
-	margin-right: -.25em;
 	font-weight: 400;
 }
 .p1 span {
@@ -464,7 +624,7 @@ You probably want to change the styling.
 .p2.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s .5s;
-/*	margin-right: -.25em;*/
+	margin-top: .25em;
 
 }
 .p2.on span:nth-of-type(4) {
@@ -501,25 +661,7 @@ You probably want to change the styling.
 .p2.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0s 2.3s;
-	
-}
-
-.p2.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 2.5s;
-	
-}
-
-.p2.on span:nth-of-type(12) {
-	opacity: 1;
-	transition: 0s 2.6s;
-	
-}
-
-.p2.on span:nth-of-type(13) {
-	opacity: 1;
-	transition: 0s 2.8s;
-	
+	font-size: 84px;
 }
 
 
@@ -644,6 +786,20 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s .7s;
 
+}
+
+.p6 span {
+	opacity: 0;
+	
+}
+.p6.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	
+}
+.p6.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
 }
 .p7 span {
 	opacity: 0;
@@ -860,6 +1016,16 @@ font-weight: 200;
     transition: 0s 2.5s;
 font-size: 60px;}
 
+.p17 span {
+	opacity: 0;
+	
+}
+.p17.on span:first-of-type {
+	opacity: 1;
+    transition: .1s;
+    font-size: 60px;
+font-weight:500;}
+
 .p19 span {
 	opacity: 0;
 	
@@ -1049,10 +1215,12 @@ font-weight: 200;}
 .p24.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s 2.5s;
+    font-weight: 100;
 }
 .p24.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s 2.8s;
+    font-weight: 100;
 }
 .p26 span {
 	opacity: 0;
