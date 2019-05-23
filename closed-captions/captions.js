@@ -40,11 +40,11 @@ captions[28] = ['85.65','90.17'];
 captions[29] = ['90.71','93.59'];
 // MARLEEY
 captions[30] = ['93.59','94.74'];
-captions[31] = ['118.74','118.74'];
-captions[32] = ['118.74','118.74'];
+captions[31] = ['106.10','108.74'];
+captions[32] = ['108.8','118.20'];
 // Sorry usually does this with
-captions[33] = ['118.74','121.78'];
-captions[34] = ['122.33','124.13'];
+captions[33] = ['118.20','121.33'];
+captions[34] = ['121.33','124.13'];
 captions[35] = ['124.13','127.74'];
 // Once it takes hold
 captions[36] = ['128.31','131.61'];
